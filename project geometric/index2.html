@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville:wght@700&family=Lilita+One&family=Poppins:wght@300;400&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Menghitung Luas dan Keliling Bangun Datar</h1>
+        <script src="script2.js"></script>
+        <div class="bangun-datar">
+            <br>
+            <h2>Persegi</h2>
+            <center>
+                <img src="https://4.bp.blogspot.com/-yZUUHMbqCMU/XMUyyqxDoXI/AAAAAAAABEA/RqZCGdxTAm4ZCs7acKpWWgvbgOgrtpYWgCLcBGAs/s1600/persegi.png" alt="Persegi" width="300px">
+            </center>
+            <br>
+            <p>Sisi Persegi:</p><input type="number" placeholder="Masukkan sisi (cm)" id="s">
+            <button onclick="persegi()">Hitung Keliling</button>
+            <p>Hasil: <span id="kelper"></span></p>
+            <br>
+            <p>Sisi Persegi:</p><input type="number" placeholder="Masukkan sisi (cm)" id="lper">
+            <button onclick="persegi()">Hitung Luas</button>
+            <p>Hasil: <span id="luasper"></span></p>
+        </div>
+        <div class="bangun-datar">
+            <br>
+            <h2>Persegi Panjang</h2>
+            <center>
+                <img src="https://2.bp.blogspot.com/-39dSM5pfibc/XMUyyLyEzzI/AAAAAAAABD8/fZNpu4pjYeoxKm60NrCu1v8iDNQIRRRdQCLcBGAs/s1600/persegi%2Bpanjang.png" alt="Persegi Panjang" width="400px">
+            </center>
+            <br><br>
+            <div class="keliling">
+                <p>Panjang Persegi Panjang:</p><input type="number" placeholder="Masukkan panjang (cm)" id="p"><br>
+                <p>Lebar Persegi Panjang:</p><input type="number" placeholder="Masukkan lebar (cm)" id="l"><br>
+                <button onclick="persegipanjang()">Hitung Keliling</button>
+                <p>Hasil: <span id="kelperpan"></span></p>
+            </div>
+            <div class="luas">
+                <p>Panjang Persegi Panjang:</p><input type="number" placeholder="Masukkan panjang (cm)" id="pperpan"><br>
+                <p>Lebar Persegi Panjang:</p><input type="number" placeholder="Masukkan lebar (cm)" id="lperpan"><br>
+                <button onclick="persegipanjang()">Hitung Luas</button>
+                <p>Hasil: <span id="luasperpan"></span></p>
+            </div>
+        </div>
+        <div class="bangun-datar">
+            <h2>Segitiga</h2>
+            <center>
+                <img src="https://1.bp.blogspot.com/-fBysYnTPs-s/XoC-6Byi8iI/AAAAAAAAJkM/QJyOV0ZRi_s2kEGFCo2pQI9i0sCyNJ3egCLcBGAsYHQ/s320/segitiga2.png" alt="Segitiga" width="400px">
+            </center>
+            <div class="keliling">
+            <p>Sisi Pertama Segitiga:</p><input type="number" placeholder="Masukkan sisi AB (cm)" id="s1"><br>
+            <p>Sisi Kedua Segitiga:</p><input type="number" placeholder="Masukkan sisi AC (cm)" id="s2"><br>
+            <p>Sisi Ketiga Segitiga:</p><input type="number" placeholder="Masukkan sisi BC (cm)" id="s3"><br>
+            <button onclick="segitiga()">Hitung Keliling</button>
+            <p>Hasil: <span id="kelseg"></span></p>
+            </div>
+            <div class="luas">
+            <p>Alas Segitiga:</p><input type="number" placeholder="Masukkan alas (cm)" id="a"><br>
+            <p>Tinggi Segitiga:</p><input type="number" placeholder="Masukkan tinggi (cm)" id="t"><br>
+            <button onclick="segitiga()">Hitung Luas</button>
+            <p>Hasil: <span id="luasseg"></span></p>
+            </div>
+        </div>
+        <div class="bangun-datar">
+            <h2>Lingkaran</h2>
+            <br>
+            <center>
+                <img src="https://www.pinclipart.com/picdir/big/372-3723581_related-free-clipart-daily-poligono-de-12-lados.png" alt="lingkaran" width="300px">
+            </center>
+            <br><br><br>
+            <p>Jari-jari Lingkaran:</p><input type="number" placeholder="Masukkan Nilai r (cm)" id="jari"> 
+            <button onclick="lingkaran()">Hitung Keliling</button>
+            <p>Hasil : <span id="kelling"></span></p>
+            <br>
+            <p>Jari-jari Lingkaran:</p><input type="number" placeholder="Masukkan Nilai r (cm)" id="luas"> 
+            <button onclick="lingkaran()">Hitung Luas</button>
+            <p>Hasil : <span id="luasling"></span></p>
+        </div>
+    </div>
+</body>
+</html>
